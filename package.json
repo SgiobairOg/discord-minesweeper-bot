@@ -1,0 +1,43 @@
+{
+  "name": "discord-minesweeper-bot",
+  "version": "0.0.0",
+  "description": "A simple Minesweeper generation command for Discord",
+  "exports": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node -r dotenv/config ./dist/index.js",
+    "register": "tsc && node -r dotenv/config ./dist/deploy-commands.js",
+    "dev": "nodemon",
+    "lint": "eslint --ignore-path --ext .ts"
+  },
+  "engines": {
+    "node": "19.x"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "games",
+    "minesweeper"
+  ],
+  "author": "Aoibhe Wilson <aoibhe@wilsons.io>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0",
+    "eslint-config-standard-with-typescript": "^39.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}
